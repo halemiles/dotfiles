@@ -190,5 +190,8 @@ bar {
 }
 
 # Gaps
-# Configure 5px of space between windows and to the screen edges.
+# Inner gap of 10px everywhere
 gaps inner 10px
+
+# Wallpaper
+feh --bg-scale ~/Pictures/Wallpaper/wallpaper.jpg 

@@ -7,6 +7,9 @@ You've probably seen millions of these, but these are mine. I use these for deve
 - **i3** - My i3 configuration
 
 
+## Requirements
+- feh - Loads background image
+
 ## Usage
 **Please backup your existing configs** if you consider using mine. I won't be responsible for any overwritten configs.
 
