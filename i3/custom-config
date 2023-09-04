@@ -15,7 +15,7 @@
 gaps inner 10px
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-scale wallpaper/wallpaper.jpeg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/wallpaper.jpeg
 
 # Custom binds
 ## Rofi
