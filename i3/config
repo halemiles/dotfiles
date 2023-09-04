@@ -48,6 +48,10 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+# Hide titlebar
+# https://bitbanged.com/posts/how-to-hide-i3wms-title-bar-properly/
+font pango:DejaVu Sans Mono 0
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
