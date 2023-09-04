@@ -21,6 +21,9 @@ echo "Copying wallpaper..."
 # Wallpaper
 cp wallpaper/wallpaper.jpeg ~/Pictures/Wallpaper
 
+echo "Stopping polybar instances"
+sudo killall polybar
+
 echo "Restarting i3..."
 i3 restart
 
