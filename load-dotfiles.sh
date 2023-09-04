@@ -7,7 +7,12 @@ echo "Copying i3 configs..."
 cp -r ~/.config/i3 ~/.config/i3-backup
 cp -r i3 ~/.config
 
-echo "Copying nbim configs..."
+echo "Copying polybar configs..."
+# i3
+cp -r ~/.config/polybar ~/.config/polybar-backup
+cp -r polybar ~/.config
+
+echo "Copying nvim configs..."
 # Neovim
 cp -r ~/.config/nvim ~/.config/nvim-backup
 cp -r nvim ~/.config
