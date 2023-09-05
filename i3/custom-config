@@ -2,6 +2,7 @@
 
 # Polybar
 exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini
+#exec_always --no-startup-id ~/.config/polybar/launch.sh
 # Custom binds
 ## Lockscreen
 bindsym $mod+Shift+o exec --no-startup-id i3lock

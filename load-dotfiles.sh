@@ -8,7 +8,7 @@ cp -r ~/.config/i3 ~/.config/i3-backup
 cp -r i3 ~/.config
 
 echo "Copying polybar configs..."
-# i3
+# polybar
 cp -r ~/.config/polybar ~/.config/polybar-backup
 cp -r polybar ~/.config
 
