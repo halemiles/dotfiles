@@ -9,7 +9,7 @@ cp -r i3 ~/.config
 
 echo "Copying polybar configs..."
 # polybar
-cp -r ~/.config/polybar ~/.config/polybar-backup
+cp -r ~/.config/polybar/* ~/.config/polybar-backup
 cp -r polybar ~/.config
 
 echo "Copying nvim configs..."
