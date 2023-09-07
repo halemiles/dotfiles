@@ -19,3 +19,5 @@ You've probably seen millions of these, but these are mine. I use these for deve
 
 ### Apply configs
 `./load-dotfiles.sh`
+
+Do not run this as root as `~` is used. Sudo will cause `/root` directory to be used to deploy scripts
