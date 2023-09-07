@@ -7,4 +7,4 @@ killall -q polybar
 while pgrep -x polybar -c ~/.config/polybar/config.ini >/dev/null; do sleep 1; done
 
 # Launch polybar
-polybar top &
+polybar &
