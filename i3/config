@@ -50,7 +50,7 @@ tiling_drag modifier titlebar
 
 # Hide titlebar
 # https://bitbanged.com/posts/how-to-hide-i3wms-title-bar-properly/
-font pango:DejaVu Sans Mono 0
+#font pango:DejaVu Sans Mono 8
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
