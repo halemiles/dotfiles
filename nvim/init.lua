@@ -13,3 +13,4 @@ require('packer').startup(function(use)
 end)
 
 vim.wo.number = true
+vim.wo.relativenumber = true
