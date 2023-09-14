@@ -1,16 +1,5 @@
-require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'
-	use {
-		'nvim-tree/nvim-tree.lua',
-		requires = {
-		    'nvim-tree/nvim-web-devicons', -- optional
-		}	
-	}
-	use {
- 		"luukvbaal/nnn.nvim",
-		 config = function() require("nnn").setup() end
-	}
-end)
+require('main.remap')
+require('main.packer')
 
 vim.wo.number = true
 vim.wo.relativenumber = true
