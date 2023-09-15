@@ -2,6 +2,11 @@
 #exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 # Custom binds
+## Screnshots
+#interactive screenshot by pressing printscreen
+bindsym Print exec gnome-screenshot -i 
+#crop-area screenshot by pressing Mod + printscreen
+bindsym $mod+Print exec gnome-screenshot -a
 ## Lockscreen
 bindsym $mod+Shift+o exec --no-startup-id i3lock
 ## Pulse Audio controls
