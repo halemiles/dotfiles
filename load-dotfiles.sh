@@ -19,7 +19,7 @@ cp -r nvim ~/.config
 
 echo "Copying wallpaper..."
 # Wallpaper
-cp wallpaper/wallpaper.jpeg ~/Pictures/Wallpaper
+cp wallpaper/wallpaper.png ~/Pictures/Wallpaper
 
 echo "Stopping polybar instances"
 sudo killall polybar
