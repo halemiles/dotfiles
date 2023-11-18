@@ -1,0 +1,13 @@
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - name: "Move disk images"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: iso
+      - created:
+          days: 30
+    actions:
+      - move: "/media/miles/Backup/Downloads/disk-images"
