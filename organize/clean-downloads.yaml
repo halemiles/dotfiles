@@ -20,3 +20,19 @@ rules:
           days: 90
     actions:
       - trash
+  - name: "Move AppImages"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: AppImage
+    actions:
+      - copy: "~/.local/AppImages/"
+  - name: "Move PDF docs to Unsorted folder"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: pdf
+      - created:
+          days: 90
+    actions:
+      - move: "~/Documents/Unsorted/"
