@@ -1,3 +1,4 @@
+---
 name: Yaml Linter
 on: [push, pull_request]
   
