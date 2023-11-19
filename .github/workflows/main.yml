@@ -14,12 +14,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      - name: ls
-        run: ls -la
+          
       - name: Install test dependencies.
         run: pip3 install yamllint ansible-core ansible-lint
 
       - name: Lint code.
         run: |
-          yamllint -c .github./workflows/lintconfig.yml .
+          yamllint -c .github/workflows/lintconfig.yml .
           ansible-lint
