@@ -1,19 +1,23 @@
----
-name: YAML Lint
-
-on:  # yamllint disable-line rule:truthy
-  push:
-    paths:
-      - '**/*.yaml'
-      - '**/*.yml'
-
+name: Yaml Linter
+on: [push, pull_request]
+  
 jobs:
   lint:
+    name: Lint
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out code
+      - name: Check out the codebase.
         uses: actions/checkout@v2
 
-      - name: Run ansible-lint
-        uses: ansible/ansible-lint@main # or version tag instead of 'main'
+      - name: Set up Python 3.
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install test dependencies.
+        run: pip3 install yamllint ansible-core ansible-lint
+
+      - name: Lint code.
+        run: |
+          yamllint .
+          ansible-lint
