@@ -20,5 +20,5 @@ jobs:
 
       - name: Lint code.
         run: |
-          yamllint -c .github/workflows/lintconfig.yml .
+          yamllint -c .github/workflows/lintconfig .
           ansible-lint
