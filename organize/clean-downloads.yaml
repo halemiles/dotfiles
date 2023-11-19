@@ -1,0 +1,38 @@
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - name: "Move disk images"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: iso
+      - created:
+          days: 30
+    actions:
+      - move: "/media/miles/Backup/Downloads/disk-images"
+  - name: "Clean up old Debian packages"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: deb
+      - created:
+          days: 90
+    actions:
+      - trash
+  - name: "Move AppImages"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: AppImage
+    actions:
+      - copy: "~/.local/AppImages/"
+  - name: "Move PDF docs to Unsorted folder"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: pdf
+      - created:
+          days: 90
+    actions:
+      - move: "~/Documents/Unsorted/"
