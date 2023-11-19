@@ -22,8 +22,12 @@ echo "Copying wallpaper..."
 cp wallpaper/wallpaper.jpeg ~/Pictures/Wallpaper
 
 echo "Copying organize..."
-# Wallpaper
+# Organize
 cp -r organize ~/.config
+
+echo "Copying zshrc..."
+# zshrc
+cp .zshrc ~/.zshrc
 
 # if optional variable called --i3 is passed, then we will restart i3
 if [ "$1" == "--i3" ]; then
