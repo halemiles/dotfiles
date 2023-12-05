@@ -21,10 +21,26 @@ echo "Copying wallpaper..."
 # Wallpaper
 cp wallpaper/wallpaper.jpeg ~/Pictures/Wallpaper
 
-echo "Stopping polybar instances"
-sudo killall polybar
+echo "Copying organize..."
+# Organize
+cp -r organize ~/.config
 
-echo "Restarting i3..."
-i3 restart
+echo "Copying zshrc..."
+# zshrc
+cp .zshrc ~/.zshrc
+
+echo "Copying tabby..."
+# Tabby
+cp tabby-client/agent/config.toml ~/.tabby-client/agent
+
+
+# if optional variable called --i3 is passed, then we will restart i3
+if [ "$1" == "--i3" ]; then
+    echo "Stopping polybar instances"
+    sudo killall polybar
+
+    echo "Restarting i3..."
+    i3 restart
+fi
 
 echo "Finished loading dotfiles"
