@@ -29,6 +29,11 @@ echo "Copying zshrc..."
 # zshrc
 cp .zshrc ~/.zshrc
 
+echo "Copying tabby..."
+# Tabby
+cp tabby-client/agent/config.toml ~/.tabby-client/agent
+
+
 # if optional variable called --i3 is passed, then we will restart i3
 if [ "$1" == "--i3" ]; then
     echo "Stopping polybar instances"
