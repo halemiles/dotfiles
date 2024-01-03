@@ -1,3 +1,6 @@
+# Imports
+[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
+
 # Custom
 export PATH=$PATH:~/.local/bin
 
@@ -102,8 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias jekyll="bundle exec jekyll"
-
 
 # Created by `pipx` on 2023-09-22 12:39:47
 export PATH="$PATH:/home/miles/.local/bin"
