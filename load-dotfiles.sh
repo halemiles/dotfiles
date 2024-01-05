@@ -28,6 +28,7 @@ cp -r organize ~/.config
 echo "Copying zshrc..."
 # zshrc
 cp .zshrc ~/.zshrc
+cp -r .zsh ~
 
 echo "Copying tabby..."
 # Tabby
