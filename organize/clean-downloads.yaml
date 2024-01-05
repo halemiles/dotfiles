@@ -1,0 +1,36 @@
+---
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - name: "Clean up old packages and images"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: 
+          - deb
+          - iso
+      - created:
+          days: 90
+    actions:
+      - trash
+
+  - name: "Move AppImages"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: AppImage
+    actions:
+      - move: 
+          dest: "~/.local/AppImages/"
+          on_conflict: overwrite
+
+  - name: "Move PDF docs to Unsorted folder"
+    locations:
+      - ~/Downloads
+    filters:
+      - extension: pdf
+      - created:
+          days: 90
+    actions:
+      - move: "~/Documents/Unsorted/"

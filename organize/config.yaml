@@ -1,0 +1,10 @@
+---
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - name: "Replacement test"
+    locations:
+      - "${DOWNLOADS_DIR}"
+    actions:
+      - echo: "This is a file"
